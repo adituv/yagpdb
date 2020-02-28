@@ -1,0 +1,4 @@
+[submodule "dshardorchestrator"]
+	path = dshardorchestrator
+	url = https://github.com/jonas747/dshardorchestrator
+	branch = v2

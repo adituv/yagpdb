@@ -4,7 +4,10 @@ WORKDIR $GOPATH/src
 
 
 # Uncomment during development
-# COPY . github.com/jonas747/yagpdb
+COPY . github.com/jonas747/yagpdb
+
+# Workaround to get dshardorchestrator's v2 branch to be visible to go
+COPY ./dshardorchestrator github.com/jonas747/dshardorchestrator/v2
 
 RUN CGO_ENABLED=0 GOOS=linux go get -v \
   github.com/jonas747/yagpdb/cmd/yagpdb
