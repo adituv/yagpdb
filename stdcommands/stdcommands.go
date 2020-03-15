@@ -11,7 +11,7 @@ import (
 	"github.com/jonas747/yagpdb/stdcommands/calc"
 	"github.com/jonas747/yagpdb/stdcommands/catfact"
 	"github.com/jonas747/yagpdb/stdcommands/ccreqs"
-	"github.com/jonas747/yagpdb/stdcommands/createinvite"
+	"github.com/jonas747/yagpdb/stdcommands/createinviteother"
 	"github.com/jonas747/yagpdb/stdcommands/currentshard"
 	"github.com/jonas747/yagpdb/stdcommands/currenttime"
 	"github.com/jonas747/yagpdb/stdcommands/customembed"
@@ -106,7 +106,7 @@ func (p *Plugin) AddCommands() {
 		memberfetcher.Command,
 		yagstatus.Command,
 		setstatus.Command,
-		createinvite.Command,
+		createinviteother.Command,
 		findserver.Command,
 		dcallvoice.Command,
 		ccreqs.Command,
