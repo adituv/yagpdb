@@ -20,10 +20,10 @@ var Command = &commands.YAGCommand{
         {Name: "channel", Type: dcmd.Int},
     },
     RunFunc: func(data *dcmd.Data) (interface{}, error) {
-        if ok, err := bot.AdminOrPerm(0, data.Msg.Author.ID, data.CS.ID); err != nil {
+        if ok, err := bot.AdminOrPerm(discordgo.PermissionCreateInstantInvite, data.Msg.Author.ID, data.CS.ID); err != nil {
             return "Failed checking perms", err
         } else if !ok {
-            return "You need server admin perms to use this command", nil
+            return "You need create invite perms to use this command", nil
         }
 
         invite, err := common.BotSession.ChannelInviteCreate(data.Args[0].Int64(), discordgo.Invite{
