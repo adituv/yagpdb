@@ -1,4 +1,4 @@
-package createinvite
+package createinviteother
 
 import (
 	"github.com/jonas747/dcmd"
@@ -13,7 +13,7 @@ var Command = &commands.YAGCommand{
 	Cooldown:             2,
 	CmdCategory:          commands.CategoryDebug,
 	HideFromCommandsPage: true,
-	Name:                 "createinvite",
+	Name:                 "createinviteother",
 	Description:          "Maintenance command, creates a invite for the specified server",
 	HideFromHelp:         true,
 	RequiredArgs:         1,
